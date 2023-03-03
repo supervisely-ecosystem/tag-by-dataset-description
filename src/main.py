@@ -10,7 +10,7 @@ def get_or_create_tag_meta(
     api: sly.Api,
     project_meta: sly.ProjectMeta,
     tag_name: str,
-    tag_value_type: sly.TagValueType.ONEOF_STRING,
+    tag_value_type: str,
 ):
     tag_meta = project_meta.get_tag_meta(tag_name)
     if tag_meta is None:
@@ -67,7 +67,7 @@ def tag_dataset(
     # Get or Create TagMeta
     try:
         tag_meta = get_or_create_tag_meta(
-            api, project_meta, dataset.description, sly.TagValueType.NONE
+            api, project_meta, dataset.description, sly.TagValueType.ONEOF_STRING
         )
     except ValueError:
         sly.logger.warning(
