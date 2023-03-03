@@ -1,10 +1,10 @@
 {
-  "release": { "version":"v1.0.5", "name":"tag-by-dataset-name" },
-  "slug": "niko/test-tag-by-dataset-name",
+  "release": { "version":"v1.0.1", "name":"tag-by-dataset-name" },
+  "slug": "gera/test-tag-by-dataset-description",
   "main_script": "src/main.py",
   "headless": true,
-  "name": "Tag images by dataset name",
-  "description": "Add dataset name tag to all images in project or dataset",
+  "name": "Tag images by dataset description",
+  "description": "Add dataset description tag to all images in project or dataset",
   "categories": [ 
     "images",
     "annotation transformation",
